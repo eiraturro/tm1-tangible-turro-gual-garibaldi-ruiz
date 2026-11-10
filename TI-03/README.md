@@ -2,7 +2,7 @@
 
 **Tue 10/11** · _Light, temperature, distance, pressure, knock and sound sensors; thresholds_
 
-**Team:** _Name Surname, Name Surname, Name Surname_
+**Team:** _Eira Turró, Raul Ruiz, Xènia Gual, Carla Milene_
 
 ---
 
@@ -12,11 +12,11 @@ A light that turns on by itself when the room goes dark, for a real place: a hal
 
 **Must have** (tick each box when it works: edit this file and change `[ ]` to `[x]`)
 
-- [ ] LDR reading the room light
-- [ ] Turns on in the dark, off in the light, no flicker (two thresholds)
-- [ ] Thresholds come from your own measurements
-- [ ] Inside or on an object, not a bare breadboard
-- [ ] **One more sense:** only on when someone is near (distance), **or** a knock/clap overrides it, **or** brighter when it is cold (DHT11 + PWM)
+- [x] LDR reading the room light
+- [x] Turns on in the dark, off in the light, no flicker (two thresholds)
+- [x] Thresholds come from your own measurements
+- [x] Inside or on an object, not a bare breadboard
+- [x] **One more sense:** only on when someone is near (distance), **or** a knock/clap overrides it, **or** brighter when it is cold (DHT11 + PWM)
 
 **Hand in by 11:30**
 
@@ -27,52 +27,63 @@ A light that turns on by itself when the room goes dark, for a real place: a hal
 
 ## What we built
 
-_Two or three sentences: what does it do, who is it for, and how does a person interact with it?_
+El projecte consisteix en una caixa amb aparença de regal que incorpora un sistema d'il·luminació i so automàtic.
+
+Quan la caixa està tancada, el LED roman apagat i no s'emet cap so. En canvi, quan s'obre, s'encén automàticament la llum LED. A més, el sistema incorpora un sensor de so que detecta un soroll fort, com ara un aplaudiment, i activa una melodia. En el nostre prototip actual, en detectar el so, es reprodueix una única nota, però la idea final és que soni la cançó de «Per molts anys» o alguna altra melodia d'aniversari.
+
+Un cop la melodia s'ha acabat, el sistema deixa de reproduir música. Finalment, quan es torna a tancar la caixa i deixa d'entrar-hi llum, el LED s'apaga automàticament i el sistema torna al seu estat inicial.
 
 ## Materials
 
 _List every component and material you used._
 
-| Component / material | Quantity | Notes |
-| --- | --- | --- |
-| Arduino Uno | 1 | |
-| | | |
-| | | |
+| Component / material    | Quantity | Notes                                           |
+| ----------------------- | -------- | ----------------------------------------------- |
+| Arduino Uno             | 1        |                                                 |
+| Cable USB               | 1        |                                                 |
+| Protoboard              | 1        |                                                 |
+| Sensor LDR              | 1        |                                                 |
+| Sensor de so / microfòn | 1        |                                                 |
+| Buzzer                  | 1        |                                                 |
+| Resistencies            | 2        |                                                 |
+| Led                     | 1        |                                                 |
+| Jumpers                 | 12       | 3 vermells, 3 grocs, 3 blancs, 1 blau, 2 negres |
 
 ## Photo
 
-![Automatic night light: photo](media/photo-1.jpg)
-
-_More photos? Add them to `media/` and copy the line above with the new file name (`photo-2.jpg`, …)._
+![Automatic night light: photo](media/photo%201.jpeg.jpeg")
 
 ## Video
 
-_Edit this file on github.com and drag your `.mp4` (under 10 MB) here, or paste an unlisted YouTube link._
+"video_proj3.mp4"
 
 ## Code
 
 - Arduino sketch: [`ti03/ti03.ino`](ti03/ti03.ino)
-- _Other files (Tinkercad link, extra sketches…): add them to this folder or paste a link._
 
 ## Your measurements
 
-| Situation | LDR value |
-| --- | --- |
-| Room light | |
-| Dark | |
-| **Threshold ON** (below) | |
-| **Threshold OFF** (above) | |
-
-**Extra sense we added:** _distance / knock / temperature, and why it makes sense for the place._
+| Situation                 | LDR value (light) | Sound sensor value |
+| ------------------------- | ----------------- | ------------------ |
+| Room light - caixa oberta | light >= 80       | ---------          |
+| Dark - caixa tancada      | light < 80        | ---------          |
+| **Threshold ON** (below)  | 80 or above       | ---------          |
+| **Threshold OFF** (above) | Below 80          | ---------          |
+| No sound                  | ---------         | <= 100             |
+| Applause / loud sound     | ---------         | > 100              |
+| Threshold ON (buzzer)     | ---------         | > 100              |
+| Threshold OFF (buzzer)    | ---------         | <= 100             |
 
 ## Problems and fixes
 
-_One thing that went wrong and what you did about it._
+- Connexió del LED: Teníem el LED connectat al voltatge i, per això, funcionava al revés del que indicàvem al codi (HIGH i LOW).
+- Codi: Ens va costar aconseguir que el so només sonés quan féssim un aplaudiment i no automàticament en obrir la caixa. Primer s'havia d'encendre el LED amb la llum i, després, en detectar un aplaudiment, havia de sonar la melodia.
+- Sensor analògic: Al principi ens va costar entendre com funcionava i com interpretar els valors que ens proporcionava el sensor analògic.
 
 ## Going further
 
-_Did you try the “going further” idea from the slide? What happened?_
+La nostra idea inicial era que, en detectar un aplaudiment, sonés la cançó de «Per molts anys». Tot i això, com que hem fet un prototip, de moment només hem aconseguit reproduir una única nota o so.
 
 ## Use of AI
 
-_Where did you use AI today (explaining an error, ideas, reviewing…)? What did you change or check yourselves?_
+La IA ens ha ajudat sobretot a l'inici del projecte, quan estàvem perduts i no sabíem com començar el codi. Ens ha proporcionat una primera base i ens ha ajudat a afegir comentaris per entendre'l millor. Tot i això, algunes explicacions eren complicades i, finalment, hem acabat de completar i entendre el codi gràcies a les explicacions i l'ajuda d'en Jordi.
