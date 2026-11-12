@@ -32,19 +32,20 @@ La intensitat es regula amb un potenciòmetre i es pot encendre o apagar amb un 
 
 ## Materials
 
-| Component / material | Quantity | Notes |
-| Arduino Uno | 1 | |
-| Cable USB | 1 | |
-| Protoboard | 1 | |
-| Resistencies | 1 | |
-| Led | 1 | |
-| Button | 1 | |
-| Potenciòmetre | 1 | |
-| Jumpers | 8 | 2 blancs, 2 negres, 2 grocs, 1 taronja, 1 vermell|
+| Component / material | Quantity | Notes                                             |
+| -------------------- | -------- | ------------------------------------------------- |
+| Arduino Uno          | 1        |                                                   |
+| Cable USB            | 1        |                                                   |
+| Protoboard           | 1        |                                                   |
+| Resistencies         | 1        |                                                   |
+| Led                  | 1        |                                                   |
+| Button               | 1        |                                                   |
+| Potenciòmetre        | 1        |                                                   |
+| Jumpers              | 8        | 2 blancs, 2 negres, 2 grocs, 1 taronja, 1 vermell |
 
 ## Photo
 
-![Automatic night light: photo](media/photo-1.jpeg")
+![Automatic night light: photo](media/photo-1.jpeg)
 ![Automatic night light: photo](media/photo-2.jpeg)
 
 ## Video

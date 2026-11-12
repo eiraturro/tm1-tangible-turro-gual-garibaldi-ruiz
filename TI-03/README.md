@@ -49,7 +49,7 @@ Un cop la melodia s'ha acabat, el sistema deixa de reproduir música. Finalment,
 
 ## Photo
 
-![Automatic night light: photo](media/photo-1.jpeg")
+![Automatic night light: photo](media/photo-1.jpeg)
 
 ## Video
 
