@@ -42,13 +42,12 @@ La S és curta (400 ms), la O és més llarga (1000 ms) i un remat final de 3 se
 
 ## Photo
 
-![Signal light: photo](media/foto%201.jpeg)
-![Signal light: photo](media/foto%202.jpeg)
-![Signal light: photo](media/foto%203.jpeg)
+![Automatic night light: photo](media/photo-1.jpeg")
+![Automatic night light: photo](media/photo-2.jpeg")
 
 ## Video
 
-_Edit this file on github.com and drag your `.mp4` (under 10 MB) here, or paste an unlisted YouTube link._
+"video_proj1.mp4"
 
 ## Code
 

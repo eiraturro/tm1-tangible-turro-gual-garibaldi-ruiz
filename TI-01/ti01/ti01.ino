@@ -144,15 +144,15 @@ void loop() {
   // REMAT FINAL = 1 so llarg que tanca la paraula SOS -------------------
 
   //obert
-digitalWrite(LED_PIN1, HIGH);
-digitalWrite(LED_PIN2, HIGH);
-tone(BUZZER, 800);//tonalitat
-delay(3000);//so final (2.0 s, el més llarg)
+  digitalWrite(LED_PIN1, HIGH);
+  digitalWrite(LED_PIN2, HIGH);
+  tone(BUZZER, 800);//tonalitat
+  delay(3000);//so final (2.0 s, el més llarg)
 
   //apagat
-digitalWrite(LED_PIN1, LOW);
-digitalWrite(LED_PIN2, LOW);
-noTone(BUZZER);
-delay(5000); // més llarg final de tot
+  digitalWrite(LED_PIN1, LOW);
+  digitalWrite(LED_PIN2, LOW);
+  noTone(BUZZER);
+  delay(5000); // més llarg final de tot
 
 }
