@@ -42,9 +42,9 @@ La S és curta (400 ms), la O és més llarga (1000 ms) i un remat final de 3 se
 
 ## Photo
 
-![Automatic night light: photo](media/photo-1.jpeg")
-![Automatic night light: photo](media/photo-2.jpeg")
-![Automatic night light: photo](media/photo-3.png")
+![Automatic night light: photo](media/photo-1.jpeg)
+![Automatic night light: photo](media/photo-2.jpeg)
+![Automatic night light: photo](media/photo-3.png)
 
 ## Video
 
