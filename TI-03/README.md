@@ -10,7 +10,7 @@
 
 A light that turns on by itself when the room goes dark, for a real place: a hallway, a child’s room, a stair.
 
-**Must have** (tick each box when it works: edit this file and change `[ ]` to `[x]`)
+**Must have**
 
 - [x] LDR reading the room light
 - [x] Turns on in the dark, off in the light, no flicker (two thresholds)
@@ -34,8 +34,6 @@ Quan la caixa està tancada, el LED roman apagat i no s'emet cap so. En canvi, q
 Un cop la melodia s'ha acabat, el sistema deixa de reproduir música. Finalment, quan es torna a tancar la caixa i deixa d'entrar-hi llum, el LED s'apaga automàticament i el sistema torna al seu estat inicial.
 
 ## Materials
-
-_List every component and material you used._
 
 | Component / material    | Quantity | Notes                                           |
 | ----------------------- | -------- | ----------------------------------------------- |
@@ -63,16 +61,16 @@ _List every component and material you used._
 
 ## Your measurements
 
-| Situation                 | LDR value (light) | Sound sensor value |
-| ------------------------- | ----------------- | ------------------ |
-| Room light - caixa oberta | light >= 80       | ---------          |
-| Dark - caixa tancada      | light < 80        | ---------          |
-| **Threshold ON** (below)  | 80 or above       | ---------          |
-| **Threshold OFF** (above) | Below 80          | ---------          |
-| No sound                  | ---------         | <= 100             |
-| Applause / loud sound     | ---------         | > 100              |
-| Threshold ON (buzzer)     | ---------         | > 100              |
-| Threshold OFF (buzzer)    | ---------         | <= 100             |
+| Situation                  | LDR value (light) | Sound sensor value |
+| -------------------------- | ----------------- | ------------------ |
+| Room light - caixa oberta  | light >= 80       | ---------          |
+| Dark - caixa tancada       | light < 80        | ---------          |
+| **Threshold ON** (below)   | 80 or above       | ---------          |
+| **Threshold OFF** (above)  | Below 80          | ---------          |
+| No sound                   | ---------         | <= 100             |
+| Applause / loud sound      | ---------         | > 100              |
+| **Threshold ON** (buzzer)  | ---------         | > 100              |
+| **Threshold OFF** (buzzer) | ---------         | <= 100             |
 
 ## Problems and fixes
 

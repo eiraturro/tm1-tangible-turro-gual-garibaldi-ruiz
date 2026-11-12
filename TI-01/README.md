@@ -10,30 +10,26 @@
 
 Design a signal with LEDs and a buzzer that means something to someone: a heartbeat, “wait”, “go”, an alarm, SOS…
 
-**Must have** (tick each box when it works: edit this file and change `[ ]` to `[x]`)
+**Must have**
 
-- [si] At least 2 LEDs, each with a correct resistor
-- [si] A pattern with 3 timings: short, medium, long (e.g. 150, 400, 1000 ms)
-- [si] Timings stored in variables, not typed in `delay()`
-- [si] Wires in the right colours
+- [x] At least 2 LEDs, each with a correct resistor
+- [x] A pattern with 3 timings: short, medium, long (e.g. 150, 400, 1000 ms)
+- [x] Timings stored in variables, not typed in `delay()`
+- [x] Wires in the right colours
 
 **Hand in by 11:30**
 
 - Code
-
 - Photo of the circuit
 
 ---
 
 ## What we built
 
-_Two or three sentences: what does it do, who is it for, and how does a person interact with it?_
 Un senyal SOS en codi Morse amb Arduino: dos LEDs i un brunzidor s’encenen i sonen alhora.
 La S és curta (400 ms), la O és més llarga (1000 ms) i un remat final de 3 segons tanca la paraula.
 
 ## Materials
-
-_List every component and material you used._
 
 | Component / material | Quantity | Notes                                |
 | -------------------- | -------- | ------------------------------------ |
@@ -57,7 +53,6 @@ _Edit this file on github.com and drag your `.mp4` (under 10 MB) here, or paste 
 ## Code
 
 - Arduino sketch: [`ti01/ti01.ino`](ti01/ti01.ino)
-- _Other files (Tinkercad link, extra sketches…): add them to this folder or paste a link._
 
 ## Problems and fixes
 

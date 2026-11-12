@@ -41,7 +41,6 @@ La intensitat es regula amb un potenciòmetre i es pot encendre o apagar amb un 
 | Button | 1 | |
 | Potenciòmetre | 1 | |
 | Jumpers | 8 | 2 blancs, 2 negres, 2 grocs, 1 taronja, 1 vermell|
-| Arduino Uno | 1 | |
 
 ## Photo
 
