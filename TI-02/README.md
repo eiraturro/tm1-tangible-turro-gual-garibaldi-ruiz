@@ -50,7 +50,7 @@ La intensitat es regula amb un potenciòmetre i es pot encendre o apagar amb un 
 
 ## Video
 
-![Automatic night light: video](media/video_proj2.mp4)
+![Automatic night light: photo](media/video_proj2.mp4)
 
 ## Code
 
