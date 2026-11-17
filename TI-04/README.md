@@ -49,10 +49,10 @@ Finalment, quan l’usuari prem el botó, tant la llum com el so s’apaguen. D�
 
 ## Photo
 
-![The object that answers: photo](media/photo-1.jpg)
-![The object that answers: photo](media/photo-2.jpg)
-![The object that answers: photo](media/photo-3.jpg)
-![The object that answers: photo](media/photo-4.jpg)
+![The object that answers: photo](media/photo-1.jpeg)
+![The object that answers: photo](media/photo-2.jpeg)
+![The object that answers: photo](media/photo-3.jpeg)
+![The object that answers: photo](media/photo-4.jpeg)
 
 ## Video
 
