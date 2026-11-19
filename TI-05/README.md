@@ -45,7 +45,7 @@ La nostra caixa només s'obre amb la seqüència correcta de 3 botons.
 
 ## Photo
 
-![The safe box (graded): photo](media/diagrama.jpg)
+![The safe box (graded): photo](media/diagrama.png)
 
 ## Video
 
