@@ -2,7 +2,7 @@
 
 **Tue 17/11** · _States and `switch/case`, arrays, functions, `millis()`, edge detection, RFID_
 
-**Team:** _Name Surname, Name Surname, Name Surname_
+**Team:** _Eira Turró, Raul Ruiz, Xènia Gual_
 
 ---
 
@@ -10,12 +10,12 @@
 
 Build a box that only opens with the right sequence. The LED strip shows whether it is locked, listening or open; buttons, knocks or an RFID card are the key.
 
-**Must have** (tick each box when it works: edit this file and change `[ ]` to `[x]`)
+**Must have**
 
-- [ ] At least 3 states in a `switch/case`
-- [ ] A code of 3+ steps stored in an array
-- [ ] Wrong step resets, with feedback
-- [ ] Closes itself after 5 s, using `millis()`
+- [x] At least 3 states in a `switch/case`
+- [x] A code of 3+ steps stored in an array
+- [x] Wrong step resets, with feedback
+- [x] Closes itself after 5 s, using `millis()`
 
 **Hand in by 11:30**
 
@@ -27,23 +27,25 @@ Build a box that only opens with the right sequence. The LED strip shows whether
 
 ## What we built
 
-_Two or three sentences: what does it do, who is it for, and how does a person interact with it?_
+La nostra caixa només s'obre amb la seqüència correcta de 3 botons.
+
+- APAGAT: caixa en repòs. Si el sensor IR detecta algú, passa a ESPERA.
+- ESPERA: la caixa "escolta". Si el sensor detecta la persona 5 segons, comença el JOC; si deixa de detectar-la, torna a APAGAT.
+- JOC: cada botó encertat il·lumina una secció de la tira de LEDs en verd (1, 2 i 3) amb so correcte.
+- Error: si algun botó és incorrecte, tota la tira es posa en vermell, sona un so d'error i cal tornar a començar.
+- Final (tot bé): quan els tres botons són correctes, tota la tira queda en verd, sona la melodia final i la caixa s'obre.
 
 ## Materials
 
-_List every component and material you used._
-
 | Component / material | Quantity | Notes |
-| --- | --- | --- |
-| Arduino Uno | 1 | |
-| | | |
-| | | |
+| -------------------- | -------- | ----- |
+| Arduino Uno          | 1        |       |
+|                      |          |       |
+|                      |          |       |
 
 ## Photo
 
-![The safe box (graded): photo](media/photo-1.jpg)
-
-_More photos? Add them to `media/` and copy the line above with the new file name (`photo-2.jpg`, …)._
+![The safe box (graded): photo](media/diagrama.jpg)
 
 ## Video
 
@@ -56,11 +58,11 @@ _Edit this file on github.com and drag your `.mp4` (under 10 MB) here, or paste 
 
 ## States
 
-| State | LED strip shows | Goes to… when… |
-| --- | --- | --- |
-| LOCKED | | |
-| LISTENING | | |
-| OPEN | | |
+| State     | LED strip shows | Goes to… when… |
+| --------- | --------------- | -------------- |
+| LOCKED    |                 |                |
+| LISTENING |                 |                |
+| OPEN      |                 |                |
 
 **The key:** _buttons / knocks / RFID card, and the sequence._
 
