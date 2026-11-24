@@ -2,7 +2,7 @@
 
 **Tue 17/11** · _States and `switch/case`, arrays, functions, `millis()`, edge detection, RFID_
 
-**Team:** _Eira Turró, Raul Ruiz, Xènia Gual_
+**Team:** _Eira Turró, Raul Ruiz_
 
 ---
 
@@ -37,43 +37,50 @@ La nostra caixa només s'obre amb la seqüència correcta de 3 botons.
 
 ## Materials
 
-| Component / material | Quantity | Notes |
-| -------------------- | -------- | ----- |
-| Arduino Uno          | 1        |       |
-|                      |          |       |
-|                      |          |       |
+| Component / material | Quantity | Notes                                            |
+| -------------------- | -------- | ------------------------------------------------ |
+| Arduino Uno          | 1        |                                                  |
+| Tira LEDS            | 1        |                                                  |
+| Condensador          | 1        |                                                  |
+| Resistència 330 Ω    | 1        |                                                  |
+| Font d'alimentació   | 1        |                                                  |
+| Botons               | 3        |                                                  |
+| Buzzer               | 1        |                                                  |
+| Jumpers              | 5        | 4 blancs, 1 vermell, 6 grocs, 1 negre, 1 taronga |
+| Protoboard           | 1        |                                                  |
+| Cable USB            | 1        |                                                  |
+| Arduino Uno          | 1        |                                                  |
 
 ## Photo
 
-![The safe box (graded): photo](media/diagrama.png)
+![The object that answers: photo](media/photo-1.jpeg)
 
 ## Video
 
-_Edit this file on github.com and drag your `.mp4` (under 10 MB) here, or paste an unlisted YouTube link._
+"video_proj5.MOV"
 
 ## Code
 
 - Arduino sketch: [`ti05/ti05.ino`](ti05/ti05.ino)
-- _Other files (Tinkercad link, extra sketches…): add them to this folder or paste a link._
 
 ## States
 
-| State     | LED strip shows | Goes to… when… |
-| --------- | --------------- | -------------- |
-| LOCKED    |                 |                |
-| LISTENING |                 |                |
-| OPEN      |                 |                |
-
-**The key:** _buttons / knocks / RFID card, and the sequence._
+| State            | LED strip shows                                                         | Goes to… when…                                |
+| ---------------- | ----------------------------------------------------------------------- | --------------------------------------------- |
+| Tancat           | Leds apagats                                                            | Encara no t'has acostat al lector             |
+| Obert, en espera | Corre una llum blanca                                                   | El sensor t'ha detectat i el joc s'ha activat |
+| Joc, escoltant   | S'il·luminen els leds en verd i vermell i el buzxer fa un determinat so | Cliques un botó                               |
 
 ## Problems and fixes
 
-_One thing that went wrong and what you did about it._
+Hem tingut diverses dificultats amb el sensor IR. En primer lloc, el sensor que teníem inicialment no funcionava correctament i, posteriorment, també hem trobat complicacions a l'hora de configurar-lo i integrar-lo adequadament al codi del projecte.
 
 ## Going further
 
-_Did you try the “going further” idea from the slide? What happened?_
+També havíem volgut incorporar un sensor IR al nostre projecte, però finalment no hem pogut acabar d'implementar-lo. D'altra banda, havíem plantejat afegir estímuls diferents per indicar que el codi s'havia introduït correctament, com ara llums de diversos colors i la reproducció d'una cançó coneguda. Tot i això, per qüestions de temps, hem decidit mantenir el funcionament bàsic inicial i prioritzar que les funcionalitats principals del projecte funcionessin correctament.
 
 ## Use of AI
 
-_Where did you use AI today (explaining an error, ideas, reviewing…)? What did you change or check yourselves?_
+Per desenvolupar el nostre projecte, ens hem basat principalment en els apunts que vam prendre el dia que en Jodir ens va presentar el seu projecte i ens va explicar el codi que havia utilitzat per crear la seva caixa forta. A partir d'aquesta base, hem utilitzat la intel·ligència artificial com a eina de suport per completar i adaptar el codi a les necessitats del nostre projecte.
+
+Durant tot aquest procés, hem supervisat i revisat les propostes de la IA, aportant el nostre propi feedback i fent els ajustos necessaris per assegurar-nos que el resultat final s'adaptés al que volíem aconseguir.
